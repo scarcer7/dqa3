@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.razor.dqa.mapper.CommonAreaCodeMapper" >
+    <resultMap id="BaseResultMap" type="com.razor.dqa.model.CommonAreaCode" >
+        <id column="parent_code" property="parentCode" jdbcType="VARCHAR" />
+        <result column="code" property="code" jdbcType="VARCHAR" />
+        <result column="address" property="address" jdbcType="VARCHAR" />
+        <result column="level" property="level" jdbcType="TINYINT" />
+        <result column="address_detail" property="addressDetail" jdbcType="VARCHAR" />
+    </resultMap>
+    
+    <select id="selectListByRowBounds" resultMap="BaseResultMap"  >
+       SELECT 
+       * 
+	   FROM common_area_code
+    </select>
+
+    <select id="selectAllCount" resultType="java.lang.Long" >
+        SELECT 
+       COUNT(*)
+	   FROM common_area_code
+    </select>
+
+</mapper>

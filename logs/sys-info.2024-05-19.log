@@ -1,0 +1,350 @@
+2024-05-19 09:30:39 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-05-19 09:30:39 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 39600 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-19 09:30:39 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 09:30:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-19 09:30:44 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-19 09:30:45 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 6.15 seconds (JVM running for 7.211)
+2024-05-19 09:30:45 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估开始======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估结束======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估开始======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估结束======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估开始======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估结束======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估开始======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估结束======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估开始======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估结束======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估开始======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估结束======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估开始======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估结束======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估开始======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估结束======
+2024-05-19 09:30:45 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - com.razor.dqa.validator.DqaResult@317e9c3c[
+  accessibility=DqaResult.Accessibility(name=可访问性, accessibility=DqaResult.AssessmentElement(aspectName=可访问性, failures={}, b=199, a=199), availability=DqaResult.AssessmentElement(aspectName=可用性, failures={}, b=0, a=0))
+  accuracy=DqaResult.Accuracy(name=准确性, correctness=DqaResult.AssessmentElement(aspectName=数据内容正确性, failures={}, b=0, a=0), formatCompliance=DqaResult.AssessmentElement(aspectName=数据格式合规性, failures={ApplyGuaranteeInfo.guaranteeType=DqaResult.CountAndSample(count=2, sample=[5]), ApplyEmergencyContact.contactRelationship=DqaResult.CountAndSample(count=3, sample=[8]), ApplyRecordAudit.rejectedReason=DqaResult.CountAndSample(count=32, sample=[, 客户要求])}, b=810, a=847), duplicationRate=DqaResult.AssessmentElement(aspectName=数据重复率, failures={}, b=199, a=199), uniqueness=DqaResult.AssessmentElement(aspectName=数据唯一性, failures={}, b=199, a=199), dirtyDataRate=DqaResult.AssessmentElement(aspectName=脏数据出现率, failures={}, b=0, a=0))
+  completeness=DqaResult.Completeness(name=完整性, elementCompleteness=DqaResult.AssessmentElement(aspectName=数据元素完整性, failures={ApplyUserSpouseInfo.faceSignMediaId=DqaResult.CountAndSample(count=3, sample=[null]), ApplyUserInfo.faceSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.gender=DqaResult.CountAndSample(count=1, sample=[null]), ApplyUserInfo.personalSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.applyRecordId=DqaResult.CountAndSample(count=23, sample=[null]), ApplyUserSpouseInfo.personalSignMediaId=DqaResult.CountAndSample(count=3, sample=[null])}, b=1244, a=1284), recordCompleteness=DqaResult.AssessmentElement(aspectName=数据记录完整性, failures={}, b=0, a=0))
+  consistency=DqaResult.Consistency(name=一致性, sameData=DqaResult.AssessmentElement(aspectName=相同数据一致性, failures={}, b=0, a=0), releventData=DqaResult.AssessmentElement(aspectName=关联数据一致性, failures={ApplyUserInfo.registeredCode=DqaResult.CountAndSample(count=6, sample=[]), ApplyUserInfo.liveCode=DqaResult.CountAndSample(count=15, sample=[360102, 370102, 110115, 110101, 640104]), ApplyUserSpouseInfo.registeredCode=DqaResult.CountAndSample(count=10, sample=[, 420598])}, b=172, a=203))
+  normativity=DqaResult.Normativity(name=规范性, dataStandard=DqaResult.AssessmentElement(aspectName=数据标准, failures={}, b=0, a=0), dataModel=DqaResult.AssessmentElement(aspectName=数据模型, failures={}, b=0, a=0), metaData=DqaResult.AssessmentElement(aspectName=元数据, failures={}, b=3025, a=3025), businessRule=DqaResult.AssessmentElement(aspectName=业务规则, failures={ApplyGuaranteeInfo.houseNo=DqaResult.CountAndSample(count=16, sample=[鄂(2022)宜昌市不动产权第0045534号, 鄂(2022)宜昌市不动产权第0045536号, 鄂(2022)宜昌市不动产权第0045537号1, 鄂(2022)宜昌市不动产权第0045532号, 鄂(2022)宜昌市不动产权第0045537号])}, b=4, a=20), authoritativeReference=DqaResult.AssessmentElement(aspectName=权威参考数据, failures={}, b=0, a=0), safetyRegulation=DqaResult.AssessmentElement(aspectName=安全规范, failures={}, b=0, a=0))
+  timeliness=DqaResult.Timeliness(name=时效性, periodBased=DqaResult.AssessmentElement(aspectName=基于时间段的正确性, failures={}, b=0, a=0), timestampBased=DqaResult.AssessmentElement(aspectName=基于时间点的及时性, failures={}, b=0, a=0), temporality=DqaResult.AssessmentElement(aspectName=时序性, failures={null=DqaResult.CountAndSample(count=1, sample=[null])}, b=47, a=48))
+]
+2024-05-19 09:30:45 [main] INFO  com.razor.dqa.DqaApplication - ============== end ==============
+2024-05-19 09:30:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-19 09:30:45 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-19 09:34:01 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 3452 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-19 09:34:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-05-19 09:34:01 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 09:34:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-19 09:34:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-19 09:34:05 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 5.185 seconds (JVM running for 6.027)
+2024-05-19 09:34:05 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-19 09:34:05 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估开始======
+2024-05-19 09:34:05 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估结束======
+2024-05-19 09:34:05 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估开始======
+2024-05-19 09:34:05 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估结束======
+2024-05-19 09:34:05 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估开始======
+2024-05-19 09:34:05 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估结束======
+2024-05-19 09:34:05 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估开始======
+2024-05-19 09:34:05 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估结束======
+2024-05-19 09:34:05 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估开始======
+2024-05-19 09:34:05 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估结束======
+2024-05-19 09:34:05 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估开始======
+2024-05-19 09:34:06 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估结束======
+2024-05-19 09:34:06 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估开始======
+2024-05-19 09:34:06 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估结束======
+2024-05-19 09:34:06 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估开始======
+2024-05-19 09:34:06 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估结束======
+2024-05-19 09:34:06 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - com.razor.dqa.validator.DqaResult@7a04fea7[
+  accessibility=DqaResult.Accessibility(name=可访问性, accessibility=DqaResult.AssessmentElement(aspectName=可访问性, failures={}, b=199, a=199), availability=DqaResult.AssessmentElement(aspectName=可用性, failures={}, b=0, a=0))
+  accuracy=DqaResult.Accuracy(name=准确性, correctness=DqaResult.AssessmentElement(aspectName=数据内容正确性, failures={}, b=0, a=0), formatCompliance=DqaResult.AssessmentElement(aspectName=数据格式合规性, failures={ApplyGuaranteeInfo.guaranteeType=DqaResult.CountAndSample(count=2, sample=[5]), ApplyEmergencyContact.contactRelationship=DqaResult.CountAndSample(count=3, sample=[8]), ApplyRecordAudit.rejectedReason=DqaResult.CountAndSample(count=32, sample=[, 客户要求])}, b=810, a=847), duplicationRate=DqaResult.AssessmentElement(aspectName=数据重复率, failures={}, b=199, a=199), uniqueness=DqaResult.AssessmentElement(aspectName=数据唯一性, failures={}, b=199, a=199), dirtyDataRate=DqaResult.AssessmentElement(aspectName=脏数据出现率, failures={}, b=0, a=0))
+  completeness=DqaResult.Completeness(name=完整性, elementCompleteness=DqaResult.AssessmentElement(aspectName=数据元素完整性, failures={ApplyUserSpouseInfo.faceSignMediaId=DqaResult.CountAndSample(count=3, sample=[null]), ApplyUserInfo.faceSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.gender=DqaResult.CountAndSample(count=1, sample=[null]), ApplyUserInfo.personalSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.applyRecordId=DqaResult.CountAndSample(count=23, sample=[null]), ApplyUserSpouseInfo.personalSignMediaId=DqaResult.CountAndSample(count=3, sample=[null])}, b=1244, a=1284), recordCompleteness=DqaResult.AssessmentElement(aspectName=数据记录完整性, failures={}, b=0, a=0))
+  consistency=DqaResult.Consistency(name=一致性, sameData=DqaResult.AssessmentElement(aspectName=相同数据一致性, failures={}, b=0, a=0), releventData=DqaResult.AssessmentElement(aspectName=关联数据一致性, failures={ApplyUserInfo.registeredCode=DqaResult.CountAndSample(count=6, sample=[]), ApplyUserInfo.liveCode=DqaResult.CountAndSample(count=15, sample=[360102, 370102, 110115, 110101, 640104]), ApplyUserSpouseInfo.registeredCode=DqaResult.CountAndSample(count=10, sample=[, 420598])}, b=172, a=203))
+  normativity=DqaResult.Normativity(name=规范性, dataStandard=DqaResult.AssessmentElement(aspectName=数据标准, failures={}, b=0, a=0), dataModel=DqaResult.AssessmentElement(aspectName=数据模型, failures={}, b=0, a=0), metaData=DqaResult.AssessmentElement(aspectName=元数据, failures={}, b=3025, a=3025), businessRule=DqaResult.AssessmentElement(aspectName=业务规则, failures={ApplyGuaranteeInfo.houseNo=DqaResult.CountAndSample(count=16, sample=[鄂(2022)宜昌市不动产权第0045534号, 鄂(2022)宜昌市不动产权第0045536号, 鄂(2022)宜昌市不动产权第0045537号1, 鄂(2022)宜昌市不动产权第0045532号, 鄂(2022)宜昌市不动产权第0045537号])}, b=4, a=20), authoritativeReference=DqaResult.AssessmentElement(aspectName=权威参考数据, failures={}, b=0, a=0), safetyRegulation=DqaResult.AssessmentElement(aspectName=安全规范, failures={}, b=0, a=0))
+  timeliness=DqaResult.Timeliness(name=时效性, periodBased=DqaResult.AssessmentElement(aspectName=基于时间段的正确性, failures={}, b=0, a=0), timestampBased=DqaResult.AssessmentElement(aspectName=基于时间点的及时性, failures={}, b=0, a=0), temporality=DqaResult.AssessmentElement(aspectName=时序性, failures={ApplyRecordAudit.loanTime=DqaResult.CountAndSample(count=1, sample=[Mon Aug 01 00:00:00 CST 2022])}, b=47, a=48))
+]
+2024-05-19 09:34:06 [main] INFO  com.razor.dqa.DqaApplication - ============== end ==============
+2024-05-19 09:34:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-19 09:34:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-19 09:48:19 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 3112 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-19 09:48:19 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-05-19 09:48:19 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 09:48:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-19 09:48:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-19 09:48:23 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 5.198 seconds (JVM running for 6.128)
+2024-05-19 09:48:23 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估开始======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估结束======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估开始======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估结束======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估开始======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估结束======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估开始======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估结束======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估开始======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估结束======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估开始======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估结束======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估开始======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估结束======
+2024-05-19 09:48:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估开始======
+2024-05-19 09:48:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估结束======
+2024-05-19 09:48:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - com.razor.dqa.validator.DqaResult@7915bca3[
+  accessibility=DqaResult.Accessibility(name=可访问性, accessibility=DqaResult.AssessmentElement(aspectName=可访问性, failures={null=DqaResult.CountAndSample(count=1, sample=[null])}, b=198, a=199), availability=DqaResult.AssessmentElement(aspectName=可用性, failures={}, b=0, a=0))
+  accuracy=DqaResult.Accuracy(name=准确性, correctness=DqaResult.AssessmentElement(aspectName=数据内容正确性, failures={}, b=0, a=0), formatCompliance=DqaResult.AssessmentElement(aspectName=数据格式合规性, failures={ApplyGuaranteeInfo.guaranteeType=DqaResult.CountAndSample(count=2, sample=[5]), ApplyEmergencyContact.contactRelationship=DqaResult.CountAndSample(count=3, sample=[8]), ApplyRecordAudit.rejectedReason=DqaResult.CountAndSample(count=32, sample=[, 客户要求])}, b=810, a=847), duplicationRate=DqaResult.AssessmentElement(aspectName=数据重复率, failures={}, b=199, a=199), uniqueness=DqaResult.AssessmentElement(aspectName=数据唯一性, failures={}, b=199, a=199), dirtyDataRate=DqaResult.AssessmentElement(aspectName=脏数据出现率, failures={}, b=0, a=0))
+  completeness=DqaResult.Completeness(name=完整性, elementCompleteness=DqaResult.AssessmentElement(aspectName=数据元素完整性, failures={ApplyUserSpouseInfo.faceSignMediaId=DqaResult.CountAndSample(count=3, sample=[null]), ApplyUserInfo.faceSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.gender=DqaResult.CountAndSample(count=1, sample=[null]), ApplyUserInfo.personalSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.applyRecordId=DqaResult.CountAndSample(count=23, sample=[null]), ApplyUserSpouseInfo.personalSignMediaId=DqaResult.CountAndSample(count=3, sample=[null])}, b=1244, a=1284), recordCompleteness=DqaResult.AssessmentElement(aspectName=数据记录完整性, failures={}, b=0, a=0))
+  consistency=DqaResult.Consistency(name=一致性, sameData=DqaResult.AssessmentElement(aspectName=相同数据一致性, failures={}, b=0, a=0), releventData=DqaResult.AssessmentElement(aspectName=关联数据一致性, failures={ApplyUserInfo.registeredCode=DqaResult.CountAndSample(count=6, sample=[]), ApplyUserInfo.liveCode=DqaResult.CountAndSample(count=15, sample=[360102, 370102, 110115, 110101, 640104]), ApplyUserSpouseInfo.registeredCode=DqaResult.CountAndSample(count=10, sample=[, 420598])}, b=172, a=203))
+  normativity=DqaResult.Normativity(name=规范性, dataStandard=DqaResult.AssessmentElement(aspectName=数据标准, failures={}, b=0, a=0), dataModel=DqaResult.AssessmentElement(aspectName=数据模型, failures={}, b=0, a=0), metaData=DqaResult.AssessmentElement(aspectName=元数据, failures={}, b=3024, a=3024), businessRule=DqaResult.AssessmentElement(aspectName=业务规则, failures={ApplyGuaranteeInfo.houseNo=DqaResult.CountAndSample(count=16, sample=[鄂(2022)宜昌市不动产权第0045534号, 鄂(2022)宜昌市不动产权第0045536号, 鄂(2022)宜昌市不动产权第0045537号1, 鄂(2022)宜昌市不动产权第0045532号, 鄂(2022)宜昌市不动产权第0045537号])}, b=4, a=20), authoritativeReference=DqaResult.AssessmentElement(aspectName=权威参考数据, failures={}, b=0, a=0), safetyRegulation=DqaResult.AssessmentElement(aspectName=安全规范, failures={}, b=0, a=0))
+  timeliness=DqaResult.Timeliness(name=时效性, periodBased=DqaResult.AssessmentElement(aspectName=基于时间段的正确性, failures={}, b=0, a=0), timestampBased=DqaResult.AssessmentElement(aspectName=基于时间点的及时性, failures={}, b=0, a=0), temporality=DqaResult.AssessmentElement(aspectName=时序性, failures={}, b=47, a=47))
+]
+2024-05-19 09:48:24 [main] INFO  com.razor.dqa.DqaApplication - ============== end ==============
+2024-05-19 09:48:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-19 09:48:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-19 09:51:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-05-19 09:51:08 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 25720 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-19 09:51:08 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 09:51:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-19 09:51:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-19 09:51:13 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 5.691 seconds (JVM running for 6.986)
+2024-05-19 09:51:13 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-19 09:51:22 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估开始======
+2024-05-19 09:52:17 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估结束======
+2024-05-19 09:52:17 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估开始======
+2024-05-19 09:52:17 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估结束======
+2024-05-19 09:52:17 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估开始======
+2024-05-19 09:52:17 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估结束======
+2024-05-19 09:52:17 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估开始======
+2024-05-19 09:52:17 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估结束======
+2024-05-19 09:52:17 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估开始======
+2024-05-19 09:52:17 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估结束======
+2024-05-19 09:52:17 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估开始======
+2024-05-19 09:53:02 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估结束======
+2024-05-19 09:53:02 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估开始======
+2024-05-19 09:53:02 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估结束======
+2024-05-19 09:53:02 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估开始======
+2024-05-19 10:04:39 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-05-19 10:04:39 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 26636 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-19 10:04:39 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 10:04:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-19 10:04:43 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-19 10:04:43 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 5.306 seconds (JVM running for 6.194)
+2024-05-19 10:04:43 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-19 10:04:43 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估开始======
+2024-05-19 10:04:43 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估结束======
+2024-05-19 10:04:43 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估开始======
+2024-05-19 10:04:43 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估结束======
+2024-05-19 10:04:43 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估开始======
+2024-05-19 10:04:44 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估结束======
+2024-05-19 10:04:44 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估开始======
+2024-05-19 10:04:44 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估结束======
+2024-05-19 10:04:44 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估开始======
+2024-05-19 10:04:44 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估结束======
+2024-05-19 10:04:44 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估开始======
+2024-05-19 10:04:44 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估结束======
+2024-05-19 10:04:44 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估开始======
+2024-05-19 10:04:44 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估结束======
+2024-05-19 10:04:44 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估开始======
+2024-05-19 10:04:44 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估结束======
+2024-05-19 10:04:44 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - com.razor.dqa.validator.DqaResult@44b194fe[
+  accessibility=DqaResult.Accessibility(name=可访问性, accessibility=DqaResult.AssessmentElement(aspectName=可访问性, failures={}, b=198, a=199), availability=DqaResult.AssessmentElement(aspectName=可用性, failures={}, b=0, a=0))
+  accuracy=DqaResult.Accuracy(name=准确性, correctness=DqaResult.AssessmentElement(aspectName=数据内容正确性, failures={}, b=0, a=0), formatCompliance=DqaResult.AssessmentElement(aspectName=数据格式合规性, failures={ApplyGuaranteeInfo.guaranteeType=DqaResult.CountAndSample(count=2, sample=[5]), ApplyEmergencyContact.contactRelationship=DqaResult.CountAndSample(count=3, sample=[8]), ApplyRecordAudit.rejectedReason=DqaResult.CountAndSample(count=32, sample=[, 客户要求])}, b=810, a=847), duplicationRate=DqaResult.AssessmentElement(aspectName=数据重复率, failures={}, b=199, a=199), uniqueness=DqaResult.AssessmentElement(aspectName=数据唯一性, failures={}, b=199, a=199), dirtyDataRate=DqaResult.AssessmentElement(aspectName=脏数据出现率, failures={}, b=0, a=0))
+  completeness=DqaResult.Completeness(name=完整性, elementCompleteness=DqaResult.AssessmentElement(aspectName=数据元素完整性, failures={ApplyUserSpouseInfo.faceSignMediaId=DqaResult.CountAndSample(count=3, sample=[null]), ApplyUserInfo.faceSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.gender=DqaResult.CountAndSample(count=1, sample=[null]), ApplyUserInfo.personalSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.applyRecordId=DqaResult.CountAndSample(count=23, sample=[null]), ApplyUserSpouseInfo.personalSignMediaId=DqaResult.CountAndSample(count=3, sample=[null])}, b=1244, a=1284), recordCompleteness=DqaResult.AssessmentElement(aspectName=数据记录完整性, failures={}, b=0, a=0))
+  consistency=DqaResult.Consistency(name=一致性, sameData=DqaResult.AssessmentElement(aspectName=相同数据一致性, failures={}, b=0, a=0), releventData=DqaResult.AssessmentElement(aspectName=关联数据一致性, failures={ApplyUserInfo.registeredCode=DqaResult.CountAndSample(count=6, sample=[]), ApplyUserInfo.liveCode=DqaResult.CountAndSample(count=15, sample=[360102, 370102, 110115, 110101, 640104]), ApplyUserSpouseInfo.registeredCode=DqaResult.CountAndSample(count=10, sample=[, 420598])}, b=172, a=203))
+  normativity=DqaResult.Normativity(name=规范性, dataStandard=DqaResult.AssessmentElement(aspectName=数据标准, failures={}, b=0, a=0), dataModel=DqaResult.AssessmentElement(aspectName=数据模型, failures={}, b=0, a=0), metaData=DqaResult.AssessmentElement(aspectName=元数据, failures={}, b=3024, a=3024), businessRule=DqaResult.AssessmentElement(aspectName=业务规则, failures={ApplyGuaranteeInfo.houseNo=DqaResult.CountAndSample(count=16, sample=[鄂(2022)宜昌市不动产权第0045534号, 鄂(2022)宜昌市不动产权第0045536号, 鄂(2022)宜昌市不动产权第0045537号1, 鄂(2022)宜昌市不动产权第0045532号, 鄂(2022)宜昌市不动产权第0045537号])}, b=4, a=20), authoritativeReference=DqaResult.AssessmentElement(aspectName=权威参考数据, failures={}, b=0, a=0), safetyRegulation=DqaResult.AssessmentElement(aspectName=安全规范, failures={}, b=0, a=0))
+  timeliness=DqaResult.Timeliness(name=时效性, periodBased=DqaResult.AssessmentElement(aspectName=基于时间段的正确性, failures={}, b=0, a=0), timestampBased=DqaResult.AssessmentElement(aspectName=基于时间点的及时性, failures={}, b=0, a=0), temporality=DqaResult.AssessmentElement(aspectName=时序性, failures={}, b=47, a=47))
+]
+2024-05-19 10:04:44 [main] INFO  com.razor.dqa.DqaApplication - ============== end ==============
+2024-05-19 10:04:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-19 10:04:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-19 10:06:34 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-05-19 10:06:34 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 1768 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-19 10:06:34 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 10:06:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-19 10:06:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-19 10:06:39 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 5.509 seconds (JVM running for 6.977)
+2024-05-19 10:06:39 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-19 10:06:46 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估开始======
+2024-05-19 10:06:58 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估结束======
+2024-05-19 10:06:58 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估开始======
+2024-05-19 10:06:58 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估结束======
+2024-05-19 10:06:58 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估开始======
+2024-05-19 10:06:58 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估结束======
+2024-05-19 10:06:58 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估开始======
+2024-05-19 10:06:58 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估结束======
+2024-05-19 10:06:58 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估开始======
+2024-05-19 10:06:58 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估结束======
+2024-05-19 10:06:58 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估开始======
+2024-05-19 10:07:06 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估结束======
+2024-05-19 10:07:06 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估开始======
+2024-05-19 10:07:06 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估结束======
+2024-05-19 10:07:06 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估开始======
+2024-05-19 10:07:47 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估结束======
+2024-05-19 10:07:47 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - com.razor.dqa.validator.DqaResult@2df65a56[
+  accessibility=DqaResult.Accessibility(name=可访问性, accessibility=DqaResult.AssessmentElement(aspectName=可访问性, failures={}, b=198, a=199), availability=DqaResult.AssessmentElement(aspectName=可用性, failures={}, b=0, a=0))
+  accuracy=DqaResult.Accuracy(name=准确性, correctness=DqaResult.AssessmentElement(aspectName=数据内容正确性, failures={}, b=0, a=0), formatCompliance=DqaResult.AssessmentElement(aspectName=数据格式合规性, failures={ApplyGuaranteeInfo.guaranteeType=DqaResult.CountAndSample(count=2, sample=[5]), ApplyEmergencyContact.contactRelationship=DqaResult.CountAndSample(count=3, sample=[8]), ApplyRecordAudit.rejectedReason=DqaResult.CountAndSample(count=32, sample=[, 客户要求])}, b=810, a=847), duplicationRate=DqaResult.AssessmentElement(aspectName=数据重复率, failures={}, b=199, a=199), uniqueness=DqaResult.AssessmentElement(aspectName=数据唯一性, failures={}, b=199, a=199), dirtyDataRate=DqaResult.AssessmentElement(aspectName=脏数据出现率, failures={}, b=0, a=0))
+  completeness=DqaResult.Completeness(name=完整性, elementCompleteness=DqaResult.AssessmentElement(aspectName=数据元素完整性, failures={ApplyUserSpouseInfo.faceSignMediaId=DqaResult.CountAndSample(count=3, sample=[null]), ApplyUserInfo.faceSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.gender=DqaResult.CountAndSample(count=1, sample=[null]), ApplyUserInfo.personalSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.applyRecordId=DqaResult.CountAndSample(count=23, sample=[null]), ApplyUserSpouseInfo.personalSignMediaId=DqaResult.CountAndSample(count=3, sample=[null])}, b=1244, a=1284), recordCompleteness=DqaResult.AssessmentElement(aspectName=数据记录完整性, failures={}, b=0, a=0))
+  consistency=DqaResult.Consistency(name=一致性, sameData=DqaResult.AssessmentElement(aspectName=相同数据一致性, failures={}, b=0, a=0), releventData=DqaResult.AssessmentElement(aspectName=关联数据一致性, failures={ApplyUserInfo.registeredCode=DqaResult.CountAndSample(count=6, sample=[]), ApplyUserInfo.liveCode=DqaResult.CountAndSample(count=15, sample=[360102, 370102, 110115, 110101, 640104]), ApplyUserSpouseInfo.registeredCode=DqaResult.CountAndSample(count=10, sample=[, 420598])}, b=172, a=203))
+  normativity=DqaResult.Normativity(name=规范性, dataStandard=DqaResult.AssessmentElement(aspectName=数据标准, failures={}, b=0, a=0), dataModel=DqaResult.AssessmentElement(aspectName=数据模型, failures={}, b=0, a=0), metaData=DqaResult.AssessmentElement(aspectName=元数据, failures={}, b=3024, a=3024), businessRule=DqaResult.AssessmentElement(aspectName=业务规则, failures={ApplyGuaranteeInfo.houseNo=DqaResult.CountAndSample(count=16, sample=[鄂(2022)宜昌市不动产权第0045534号, 鄂(2022)宜昌市不动产权第0045536号, 鄂(2022)宜昌市不动产权第0045537号1, 鄂(2022)宜昌市不动产权第0045532号, 鄂(2022)宜昌市不动产权第0045537号])}, b=4, a=20), authoritativeReference=DqaResult.AssessmentElement(aspectName=权威参考数据, failures={}, b=0, a=0), safetyRegulation=DqaResult.AssessmentElement(aspectName=安全规范, failures={}, b=0, a=0))
+  timeliness=DqaResult.Timeliness(name=时效性, periodBased=DqaResult.AssessmentElement(aspectName=基于时间段的正确性, failures={}, b=0, a=0), timestampBased=DqaResult.AssessmentElement(aspectName=基于时间点的及时性, failures={}, b=0, a=0), temporality=DqaResult.AssessmentElement(aspectName=时序性, failures={}, b=47, a=47))
+]
+2024-05-19 10:07:47 [main] INFO  com.razor.dqa.DqaApplication - ============== end ==============
+2024-05-19 10:07:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-19 10:07:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-19 10:08:35 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 40284 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-19 10:08:35 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-05-19 10:08:35 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 10:08:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-19 10:08:40 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-19 10:08:40 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 5.45 seconds (JVM running for 6.298)
+2024-05-19 10:08:40 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估开始======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估结束======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估开始======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估结束======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估开始======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估结束======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估开始======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估结束======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估开始======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估结束======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估开始======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估结束======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估开始======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估结束======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估开始======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估结束======
+2024-05-19 10:08:40 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - com.razor.dqa.validator.DqaResult@4a67b4ec[
+  accessibility=DqaResult.Accessibility(name=可访问性, accessibility=DqaResult.AssessmentElement(aspectName=可访问性, failures={}, b=199, a=199), availability=DqaResult.AssessmentElement(aspectName=可用性, failures={}, b=0, a=0))
+  accuracy=DqaResult.Accuracy(name=准确性, correctness=DqaResult.AssessmentElement(aspectName=数据内容正确性, failures={}, b=0, a=0), formatCompliance=DqaResult.AssessmentElement(aspectName=数据格式合规性, failures={ApplyGuaranteeInfo.guaranteeType=DqaResult.CountAndSample(count=2, sample=[5]), ApplyEmergencyContact.contactRelationship=DqaResult.CountAndSample(count=3, sample=[8]), ApplyRecordAudit.rejectedReason=DqaResult.CountAndSample(count=32, sample=[, 客户要求])}, b=810, a=847), duplicationRate=DqaResult.AssessmentElement(aspectName=数据重复率, failures={}, b=199, a=199), uniqueness=DqaResult.AssessmentElement(aspectName=数据唯一性, failures={}, b=199, a=199), dirtyDataRate=DqaResult.AssessmentElement(aspectName=脏数据出现率, failures={}, b=0, a=0))
+  completeness=DqaResult.Completeness(name=完整性, elementCompleteness=DqaResult.AssessmentElement(aspectName=数据元素完整性, failures={ApplyUserSpouseInfo.faceSignMediaId=DqaResult.CountAndSample(count=3, sample=[null]), ApplyUserInfo.faceSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.gender=DqaResult.CountAndSample(count=1, sample=[null]), ApplyUserInfo.personalSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.applyRecordId=DqaResult.CountAndSample(count=23, sample=[null]), ApplyUserSpouseInfo.personalSignMediaId=DqaResult.CountAndSample(count=3, sample=[null])}, b=1244, a=1284), recordCompleteness=DqaResult.AssessmentElement(aspectName=数据记录完整性, failures={}, b=0, a=0))
+  consistency=DqaResult.Consistency(name=一致性, sameData=DqaResult.AssessmentElement(aspectName=相同数据一致性, failures={}, b=0, a=0), releventData=DqaResult.AssessmentElement(aspectName=关联数据一致性, failures={ApplyUserInfo.registeredCode=DqaResult.CountAndSample(count=6, sample=[]), ApplyUserInfo.liveCode=DqaResult.CountAndSample(count=15, sample=[360102, 370102, 110115, 110101, 640104]), ApplyUserSpouseInfo.registeredCode=DqaResult.CountAndSample(count=10, sample=[, 420598])}, b=172, a=203))
+  normativity=DqaResult.Normativity(name=规范性, dataStandard=DqaResult.AssessmentElement(aspectName=数据标准, failures={}, b=0, a=0), dataModel=DqaResult.AssessmentElement(aspectName=数据模型, failures={}, b=0, a=0), metaData=DqaResult.AssessmentElement(aspectName=元数据, failures={}, b=3025, a=3025), businessRule=DqaResult.AssessmentElement(aspectName=业务规则, failures={ApplyGuaranteeInfo.houseNo=DqaResult.CountAndSample(count=16, sample=[鄂(2022)宜昌市不动产权第0045534号, 鄂(2022)宜昌市不动产权第0045536号, 鄂(2022)宜昌市不动产权第0045537号1, 鄂(2022)宜昌市不动产权第0045532号, 鄂(2022)宜昌市不动产权第0045537号])}, b=4, a=20), authoritativeReference=DqaResult.AssessmentElement(aspectName=权威参考数据, failures={}, b=0, a=0), safetyRegulation=DqaResult.AssessmentElement(aspectName=安全规范, failures={}, b=0, a=0))
+  timeliness=DqaResult.Timeliness(name=时效性, periodBased=DqaResult.AssessmentElement(aspectName=基于时间段的正确性, failures={}, b=0, a=0), timestampBased=DqaResult.AssessmentElement(aspectName=基于时间点的及时性, failures={}, b=0, a=0), temporality=DqaResult.AssessmentElement(aspectName=时序性, failures={}, b=47, a=47))
+]
+2024-05-19 10:08:40 [main] INFO  com.razor.dqa.DqaApplication - ============== end ==============
+2024-05-19 10:08:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-19 10:08:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-19 10:13:04 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-05-19 10:13:04 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 34672 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-19 10:13:04 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 10:13:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-19 10:13:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-19 10:13:09 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 5.328 seconds (JVM running for 6.065)
+2024-05-19 10:13:09 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估开始======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估结束======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估开始======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估结束======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估开始======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估结束======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估开始======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估结束======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估开始======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估结束======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估开始======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估结束======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估开始======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估结束======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估开始======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估结束======
+2024-05-19 10:13:09 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - com.razor.dqa.validator.DqaResult@1e43e323[
+  accessibility=DqaResult.Accessibility(name=可访问性, accessibility=DqaResult.AssessmentElement(aspectName=可访问性, failures={}, b=199, a=199), availability=DqaResult.AssessmentElement(aspectName=可用性, failures={}, b=0, a=0))
+  accuracy=DqaResult.Accuracy(name=准确性, correctness=DqaResult.AssessmentElement(aspectName=数据内容正确性, failures={}, b=0, a=0), formatCompliance=DqaResult.AssessmentElement(aspectName=数据格式合规性, failures={ApplyGuaranteeInfo.guaranteeType=DqaResult.CountAndSample(count=2, sample=[5]), ApplyEmergencyContact.contactRelationship=DqaResult.CountAndSample(count=3, sample=[8]), ApplyRecordAudit.rejectedReason=DqaResult.CountAndSample(count=32, sample=[, 客户要求])}, b=810, a=847), duplicationRate=DqaResult.AssessmentElement(aspectName=数据重复率, failures={}, b=199, a=199), uniqueness=DqaResult.AssessmentElement(aspectName=数据唯一性, failures={}, b=199, a=199), dirtyDataRate=DqaResult.AssessmentElement(aspectName=脏数据出现率, failures={}, b=0, a=0))
+  completeness=DqaResult.Completeness(name=完整性, elementCompleteness=DqaResult.AssessmentElement(aspectName=数据元素完整性, failures={ApplyUserSpouseInfo.faceSignMediaId=DqaResult.CountAndSample(count=3, sample=[null]), ApplyUserInfo.faceSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.gender=DqaResult.CountAndSample(count=1, sample=[null]), ApplyUserInfo.personalSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.applyRecordId=DqaResult.CountAndSample(count=23, sample=[null]), ApplyUserSpouseInfo.personalSignMediaId=DqaResult.CountAndSample(count=3, sample=[null])}, b=1244, a=1284), recordCompleteness=DqaResult.AssessmentElement(aspectName=数据记录完整性, failures={}, b=0, a=0))
+  consistency=DqaResult.Consistency(name=一致性, sameData=DqaResult.AssessmentElement(aspectName=相同数据一致性, failures={}, b=0, a=0), releventData=DqaResult.AssessmentElement(aspectName=关联数据一致性, failures={ApplyUserInfo.registeredCode=DqaResult.CountAndSample(count=6, sample=[]), ApplyUserInfo.liveCode=DqaResult.CountAndSample(count=15, sample=[360102, 370102, 110115, 110101, 640104]), ApplyUserSpouseInfo.registeredCode=DqaResult.CountAndSample(count=10, sample=[, 420598])}, b=172, a=203))
+  normativity=DqaResult.Normativity(name=规范性, dataStandard=DqaResult.AssessmentElement(aspectName=数据标准, failures={}, b=0, a=0), dataModel=DqaResult.AssessmentElement(aspectName=数据模型, failures={}, b=0, a=0), metaData=DqaResult.AssessmentElement(aspectName=元数据, failures={}, b=3025, a=3025), businessRule=DqaResult.AssessmentElement(aspectName=业务规则, failures={ApplyGuaranteeInfo.houseNo=DqaResult.CountAndSample(count=16, sample=[鄂(2022)宜昌市不动产权第0045534号, 鄂(2022)宜昌市不动产权第0045536号, 鄂(2022)宜昌市不动产权第0045537号1, 鄂(2022)宜昌市不动产权第0045532号, 鄂(2022)宜昌市不动产权第0045537号])}, b=4, a=20), authoritativeReference=DqaResult.AssessmentElement(aspectName=权威参考数据, failures={}, b=0, a=0), safetyRegulation=DqaResult.AssessmentElement(aspectName=安全规范, failures={}, b=0, a=0))
+  timeliness=DqaResult.Timeliness(name=时效性, periodBased=DqaResult.AssessmentElement(aspectName=基于时间段的正确性, failures={}, b=0, a=0), timestampBased=DqaResult.AssessmentElement(aspectName=基于时间点的及时性, failures={}, b=0, a=0), temporality=DqaResult.AssessmentElement(aspectName=时序性, failures={}, b=47, a=47))
+]
+2024-05-19 10:13:09 [main] INFO  com.razor.dqa.DqaApplication - ============== end ==============
+2024-05-19 10:13:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-19 10:13:09 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-19 10:17:33 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 37424 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-19 10:17:33 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-05-19 10:17:34 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 10:17:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-19 10:17:38 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-19 10:17:38 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 5.358 seconds (JVM running for 6.34)
+2024-05-19 10:17:38 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-19 10:17:38 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估开始======
+2024-05-19 10:17:38 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估结束======
+2024-05-19 10:17:38 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估开始======
+2024-05-19 10:17:38 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估结束======
+2024-05-19 10:17:38 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估开始======
+2024-05-19 10:17:38 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估结束======
+2024-05-19 10:17:38 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估开始======
+2024-05-19 10:17:38 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估结束======
+2024-05-19 10:17:38 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估开始======
+2024-05-19 10:17:39 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估结束======
+2024-05-19 10:17:39 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估开始======
+2024-05-19 10:17:39 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估结束======
+2024-05-19 10:17:39 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估开始======
+2024-05-19 10:17:39 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估结束======
+2024-05-19 10:17:39 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估开始======
+2024-05-19 10:17:39 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估结束======
+2024-05-19 10:17:39 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - com.razor.dqa.validator.DqaResult@79fd6f95[
+  accessibility=DqaResult.Accessibility(name=可访问性, accessibility=DqaResult.AssessmentElement(aspectName=可访问性, failures={}, b=199, a=199), availability=DqaResult.AssessmentElement(aspectName=可用性, failures={}, b=0, a=0))
+  accuracy=DqaResult.Accuracy(name=准确性, correctness=DqaResult.AssessmentElement(aspectName=数据内容正确性, failures={}, b=0, a=0), formatCompliance=DqaResult.AssessmentElement(aspectName=数据格式合规性, failures={ApplyGuaranteeInfo.guaranteeType=DqaResult.CountAndSample(count=2, sample=[5]), ApplyEmergencyContact.contactRelationship=DqaResult.CountAndSample(count=3, sample=[8]), ApplyRecordAudit.rejectedReason=DqaResult.CountAndSample(count=32, sample=[, 客户要求])}, b=810, a=847), duplicationRate=DqaResult.AssessmentElement(aspectName=数据重复率, failures={}, b=199, a=199), uniqueness=DqaResult.AssessmentElement(aspectName=数据唯一性, failures={}, b=199, a=199), dirtyDataRate=DqaResult.AssessmentElement(aspectName=脏数据出现率, failures={}, b=0, a=0))
+  completeness=DqaResult.Completeness(name=完整性, elementCompleteness=DqaResult.AssessmentElement(aspectName=数据元素完整性, failures={ApplyUserSpouseInfo.faceSignMediaId=DqaResult.CountAndSample(count=3, sample=[null]), ApplyUserInfo.faceSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.gender=DqaResult.CountAndSample(count=1, sample=[null]), ApplyUserInfo.personalSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.applyRecordId=DqaResult.CountAndSample(count=23, sample=[null]), ApplyUserSpouseInfo.personalSignMediaId=DqaResult.CountAndSample(count=3, sample=[null])}, b=1244, a=1284), recordCompleteness=DqaResult.AssessmentElement(aspectName=数据记录完整性, failures={}, b=0, a=0))
+  consistency=DqaResult.Consistency(name=一致性, sameData=DqaResult.AssessmentElement(aspectName=相同数据一致性, failures={}, b=0, a=0), releventData=DqaResult.AssessmentElement(aspectName=关联数据一致性, failures={ApplyUserInfo.registeredCode=DqaResult.CountAndSample(count=6, sample=[]), ApplyUserInfo.liveCode=DqaResult.CountAndSample(count=15, sample=[360102, 370102, 110115, 110101, 640104]), ApplyUserSpouseInfo.registeredCode=DqaResult.CountAndSample(count=10, sample=[, 420598])}, b=172, a=203))
+  normativity=DqaResult.Normativity(name=规范性, dataStandard=DqaResult.AssessmentElement(aspectName=数据标准, failures={}, b=0, a=0), dataModel=DqaResult.AssessmentElement(aspectName=数据模型, failures={}, b=0, a=0), metaData=DqaResult.AssessmentElement(aspectName=元数据, failures={}, b=3025, a=3025), businessRule=DqaResult.AssessmentElement(aspectName=业务规则, failures={ApplyGuaranteeInfo.houseNo=DqaResult.CountAndSample(count=16, sample=[鄂(2022)宜昌市不动产权第0045534号, 鄂(2022)宜昌市不动产权第0045536号, 鄂(2022)宜昌市不动产权第0045537号1, 鄂(2022)宜昌市不动产权第0045532号, 鄂(2022)宜昌市不动产权第0045537号])}, b=4, a=20), authoritativeReference=DqaResult.AssessmentElement(aspectName=权威参考数据, failures={}, b=0, a=0), safetyRegulation=DqaResult.AssessmentElement(aspectName=安全规范, failures={}, b=0, a=0))
+  timeliness=DqaResult.Timeliness(name=时效性, periodBased=DqaResult.AssessmentElement(aspectName=基于时间段的正确性, failures={}, b=0, a=0), timestampBased=DqaResult.AssessmentElement(aspectName=基于时间点的及时性, failures={}, b=0, a=0), temporality=DqaResult.AssessmentElement(aspectName=时序性, failures={}, b=47, a=47))
+]
+2024-05-19 10:17:39 [main] INFO  com.razor.dqa.DqaApplication - ============== end ==============
+2024-05-19 10:17:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-19 10:17:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-19 10:18:15 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 29520 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-19 10:18:15 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-05-19 10:18:15 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 10:18:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-19 10:18:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-19 10:18:20 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 5.008 seconds (JVM running for 6.0)
+2024-05-19 10:18:20 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-19 10:18:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估开始======
+2024-05-19 10:18:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估结束======
+2024-05-19 10:18:23 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估开始======
+2024-05-19 10:18:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估结束======
+2024-05-19 10:18:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估开始======
+2024-05-19 10:18:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估结束======
+2024-05-19 10:18:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估开始======
+2024-05-19 10:18:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估结束======
+2024-05-19 10:18:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估开始======
+2024-05-19 10:18:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估结束======
+2024-05-19 10:18:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估开始======
+2024-05-19 10:18:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估结束======
+2024-05-19 10:18:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估开始======
+2024-05-19 10:18:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估结束======
+2024-05-19 10:18:24 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估开始======
+2024-05-19 10:20:03 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 34508 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-19 10:20:03 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2024-05-19 10:20:03 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-19 10:20:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-19 10:20:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-19 10:20:07 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 5.168 seconds (JVM running for 6.031)
+2024-05-19 10:20:08 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估开始======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record评估结束======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估开始======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_info评估结束======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估开始======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====applyUserSpouseInfo评估结束======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估开始======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_user_spouse_feedback评估结束======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估开始======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_enterprise_info评估结束======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估开始======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_guarantee_info评估结束======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估开始======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_emergency_contact评估结束======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估开始======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - =====apply_record_audit评估结束======
+2024-05-19 10:20:08 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - com.razor.dqa.validator.DqaResult@71978f46[
+  accessibility=DqaResult.Accessibility(name=可访问性, accessibility=DqaResult.AssessmentElement(aspectName=可访问性, failures={}, b=199, a=199), availability=DqaResult.AssessmentElement(aspectName=可用性, failures={}, b=0, a=0))
+  accuracy=DqaResult.Accuracy(name=准确性, correctness=DqaResult.AssessmentElement(aspectName=数据内容正确性, failures={}, b=0, a=0), formatCompliance=DqaResult.AssessmentElement(aspectName=数据格式合规性, failures={ApplyGuaranteeInfo.guaranteeType=DqaResult.CountAndSample(count=2, sample=[5]), ApplyEmergencyContact.contactRelationship=DqaResult.CountAndSample(count=3, sample=[8]), ApplyRecordAudit.rejectedReason=DqaResult.CountAndSample(count=32, sample=[, 客户要求])}, b=810, a=847), duplicationRate=DqaResult.AssessmentElement(aspectName=数据重复率, failures={}, b=199, a=199), uniqueness=DqaResult.AssessmentElement(aspectName=数据唯一性, failures={}, b=199, a=199), dirtyDataRate=DqaResult.AssessmentElement(aspectName=脏数据出现率, failures={}, b=0, a=0))
+  completeness=DqaResult.Completeness(name=完整性, elementCompleteness=DqaResult.AssessmentElement(aspectName=数据元素完整性, failures={ApplyUserSpouseInfo.faceSignMediaId=DqaResult.CountAndSample(count=3, sample=[null]), ApplyUserInfo.faceSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.gender=DqaResult.CountAndSample(count=1, sample=[null]), ApplyUserInfo.personalSignMediaId=DqaResult.CountAndSample(count=5, sample=[null]), ApplyUserInfo.applyRecordId=DqaResult.CountAndSample(count=23, sample=[null]), ApplyUserSpouseInfo.personalSignMediaId=DqaResult.CountAndSample(count=3, sample=[null])}, b=1244, a=1284), recordCompleteness=DqaResult.AssessmentElement(aspectName=数据记录完整性, failures={}, b=0, a=0))
+  consistency=DqaResult.Consistency(name=一致性, sameData=DqaResult.AssessmentElement(aspectName=相同数据一致性, failures={}, b=0, a=0), releventData=DqaResult.AssessmentElement(aspectName=关联数据一致性, failures={ApplyUserInfo.registeredCode=DqaResult.CountAndSample(count=6, sample=[]), ApplyUserInfo.liveCode=DqaResult.CountAndSample(count=15, sample=[360102, 370102, 110115, 110101, 640104]), ApplyUserSpouseInfo.registeredCode=DqaResult.CountAndSample(count=10, sample=[, 420598])}, b=172, a=203))
+  normativity=DqaResult.Normativity(name=规范性, dataStandard=DqaResult.AssessmentElement(aspectName=数据标准, failures={}, b=0, a=0), dataModel=DqaResult.AssessmentElement(aspectName=数据模型, failures={}, b=0, a=0), metaData=DqaResult.AssessmentElement(aspectName=元数据, failures={}, b=3025, a=3025), businessRule=DqaResult.AssessmentElement(aspectName=业务规则, failures={ApplyGuaranteeInfo.houseNo=DqaResult.CountAndSample(count=16, sample=[鄂(2022)宜昌市不动产权第0045534号, 鄂(2022)宜昌市不动产权第0045536号, 鄂(2022)宜昌市不动产权第0045537号1, 鄂(2022)宜昌市不动产权第0045532号, 鄂(2022)宜昌市不动产权第0045537号])}, b=4, a=20), authoritativeReference=DqaResult.AssessmentElement(aspectName=权威参考数据, failures={}, b=0, a=0), safetyRegulation=DqaResult.AssessmentElement(aspectName=安全规范, failures={}, b=0, a=0))
+  timeliness=DqaResult.Timeliness(name=时效性, periodBased=DqaResult.AssessmentElement(aspectName=基于时间段的正确性, failures={}, b=0, a=0), timestampBased=DqaResult.AssessmentElement(aspectName=基于时间点的及时性, failures={}, b=0, a=0), temporality=DqaResult.AssessmentElement(aspectName=时序性, failures={ApplyRecordAudit.loanTime=DqaResult.CountAndSample(count=1, sample=[2022-08-01 00:00:00])}, b=47, a=48))
+]
+2024-05-19 10:20:08 [main] INFO  com.razor.dqa.DqaApplication - ============== end ==============
+2024-05-19 10:20:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-19 10:20:08 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,43 @@
+2024-05-14 16:20:46 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 32336 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-14 16:20:46 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 16:20:48 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 1.769 seconds (JVM running for 2.28)
+2024-05-14 16:20:48 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-14 16:22:46 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 45772 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-14 16:22:46 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 16:22:47 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 1.771 seconds (JVM running for 2.276)
+2024-05-14 16:22:47 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-14 16:25:01 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 46352 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-14 16:25:01 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 16:25:02 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 1.631 seconds (JVM running for 2.179)
+2024-05-14 16:25:02 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-14 16:25:52 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 48712 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-14 16:25:52 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 16:25:53 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 1.561 seconds (JVM running for 2.05)
+2024-05-14 16:25:53 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-14 16:25:53 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 16:25:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 16:25:55 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - 0
+2024-05-14 16:25:55 [main] INFO  com.razor.dqa.DqaApplication - ============== end ==============
+2024-05-14 16:25:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 16:25:55 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 16:36:07 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 50848 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-14 16:36:07 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 16:36:09 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 2.492 seconds (JVM running for 3.126)
+2024-05-14 16:36:09 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-14 16:36:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 16:36:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 16:36:11 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - 1
+2024-05-14 16:36:11 [main] INFO  com.razor.dqa.DqaApplication - ============== end ==============
+2024-05-14 16:36:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 16:36:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-05-14 16:37:35 [main] INFO  com.razor.dqa.DqaApplication - Starting DqaApplication using Java 1.8.0_341 on LAPTOP-AO82E2QD with PID 29172 (D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa\target\classes started by Xanadu in D:\Work\Workspace\DataQualityAssessment\Sanxia\dqa)
+2024-05-14 16:37:35 [main] INFO  com.razor.dqa.DqaApplication - No active profile set, falling back to 1 default profile: "default"
+2024-05-14 16:37:37 [main] INFO  com.razor.dqa.DqaApplication - Started DqaApplication in 2.041 seconds (JVM running for 2.73)
+2024-05-14 16:37:37 [main] INFO  com.razor.dqa.DqaApplication - ============== start ==============
+2024-05-14 16:37:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-05-14 16:37:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-05-14 16:37:39 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - 1
+2024-05-14 16:37:39 [main] INFO  c.r.d.s.i.DataQualityAssessServiceImpl - RegisterUserInfo(id=1, userId=12312, name=ÕÅÈý)
+2024-05-14 16:37:39 [main] INFO  com.razor.dqa.DqaApplication - ============== end ==============
+2024-05-14 16:37:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-05-14 16:37:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

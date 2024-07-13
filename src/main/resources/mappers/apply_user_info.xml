@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.razor.dqa.mapper.ApplyUserInfoMapper" >
+    <resultMap id="BaseResultMap" type="com.razor.dqa.model.ApplyUserInfo" >
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="apply_record_id" property="userId" jdbcType="BIGINT" />
+        <result column="user_id" property="userId" jdbcType="VARCHAR" />
+        <result column="data_status" property="dataStatus" jdbcType="TINYINT" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+        <result column="user_type" property="userType" jdbcType="TINYINT" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="id_card" property="idCard" jdbcType="VARCHAR" />
+        <result column="gender" property="gender" jdbcType="TINYINT" />
+        <result column="politics_status" property="politicsStatus" jdbcType="TINYINT" />
+        <result column="native_place" property="nativePlace" jdbcType="VARCHAR" />
+        <result column="registered_code" property="registeredCode" jdbcType="VARCHAR" />
+        <result column="registered_residence" property="registeredResidence" jdbcType="VARCHAR" />
+        <result column="live_code" property="liveCode" jdbcType="VARCHAR" />
+        <result column="live_address" property="liveAddress" jdbcType="VARCHAR" />
+        <result column="head_portrait_media_id" property="headPortraitMediaId" jdbcType="VARCHAR" />
+        <result column="national_emblem_media_id" property="nationalEmblemMediaId" jdbcType="VARCHAR" />
+        <result column="residence_booklet_media_id" property="residenceBookletMediaId" jdbcType="VARCHAR" />
+        <result column="marriage_status" property="marriageStatus" jdbcType="TINYINT" />
+        <result column="marriage_feedback_status" property="marriageFeedbackStatus" jdbcType="TINYINT" />
+        <result column="marriage_media_id" property="marriageMediaId" jdbcType="VARCHAR" />
+        <result column="photo_media_id" property="photoMediaId" jdbcType="VARCHAR" />
+        <result column="user_loan_type" property="userLoanType" jdbcType="TINYINT" />
+        <result column="user_loan_type_supplement_media_id" property="userLoanTypeSupplementMediaId" jdbcType="VARCHAR" />
+        <result column="apply_quota" property="applyQuota" jdbcType="DECIMAL" />
+        <result column="employment_permit_media_id" property="employmentPermitMediaId" jdbcType="VARCHAR" />
+        <result column="personal_sign_media_id" property="personalSignMediaId" jdbcType="VARCHAR" />
+        <result column="face_sign_media_id" property="faceSignMediaId" jdbcType="VARCHAR" />
+        <result column="promise_sign_media_id" property="promiseSignMediaId" jdbcType="VARCHAR" />
+        <result column="admission_result" property="admissionResult" jdbcType="VARCHAR" />
+        <result column="user_audit_status" property="userAuditStatus" jdbcType="INTEGER" />
+        <result column="permission_time" property="permissionTime" jdbcType="TIMESTAMP" />
+        <result column="historical_lending_count" property="historicalLendingCount" jdbcType="TINYINT" />
+        <result column="enterprise_loan_applying_or" property="enterpriseLoanApplyingOr" jdbcType="TINYINT" />
+        <result column="submit_status" property="submitStatus" jdbcType="TINYINT" />
+        <result column="unit_info" property="unitInfo" jdbcType="VARCHAR" />
+        <result column="social_insurance_month" property="socialInsuranceMonth" jdbcType="VARCHAR" />
+        <result column="social_insurance_no" property="socialInsuranceNo" jdbcType="VARCHAR" />
+        <result column="user_guarantee_audit_media_id" property="userGuaranteeAuditMediaId" jdbcType="VARCHAR" />
+        <result column="user_apply_audit_media_id" property="userApplyAuditMediaId" jdbcType="VARCHAR" />
+        <result column="financing_contract_number" property="financingContractNumber" jdbcType="VARCHAR" />
+        <result column="financing_contract_media_id" property="financingContractMediaId" jdbcType="VARCHAR" />
+        <result column="annual_income" property="annualIncome" jdbcType="DECIMAL" />
+        <result column="loan_bank_card" property="loanBankCard" jdbcType="VARCHAR" />
+    </resultMap>
+    
+    <select id="selectListByRowBounds" resultMap="BaseResultMap"  >
+       SELECT *
+	   FROM apply_user_info
+    </select>
+
+    <select id="selectAllCount" resultType="java.lang.Long" >
+        SELECT 
+       COUNT(*)
+	   FROM apply_user_info
+    </select>
+
+</mapper>

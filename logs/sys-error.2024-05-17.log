@@ -1,0 +1,190 @@
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-17 14:49:19 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.lang.IllegalAccessException: Class com.razor.dqa.validator.fields.AfterValidator can not access a member of class com.razor.dqa.model.ApplyRecord with modifiers ""
+	at sun.reflect.Reflection.ensureMemberAccess(Reflection.java:102)
+	at java.lang.reflect.AccessibleObject.slowCheckMemberAccess(AccessibleObject.java:296)
+	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:288)
+	at java.lang.reflect.Field.get(Field.java:390)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:22)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:51)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:45)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)

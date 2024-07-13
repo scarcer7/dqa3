@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.razor.dqa.mapper.ApplyRecordMapper" >
+    <resultMap id="BaseResultMap" type="com.razor.dqa.model.ApplyRecord" >
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="user_id" property="userId" jdbcType="VARCHAR" />
+        <result column="data_status" property="dataStatus" jdbcType="TINYINT" />
+        <result column="apply_type" property="applyType" jdbcType="TINYINT" />
+        <result column="apply_status" property="applyStatus" jdbcType="TINYINT" />
+        <result column="audit_status" property="auditStatus" jdbcType="TINYINT" />
+        <result column="enterprise_id" property="enterpriseId" jdbcType="BIGINT" />
+        <result column="bank" property="bank" jdbcType="BIGINT" />
+        <result column="bank_branch" property="bankBranch" jdbcType="BIGINT" />
+        <result column="loan_term" property="loanTerm" jdbcType="INTEGER" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+        <result column="end_time" property="endTime" jdbcType="TIMESTAMP" />
+        <result column="process_instance_id" property="processInstanceId" jdbcType="VARCHAR" />
+        <result column="process_key_type" property="processKeyType" jdbcType="VARCHAR" />
+        <result column="financing_contract_name" property="financingContractName" jdbcType="VARCHAR" />
+    </resultMap>
+    
+    <sql id="Base_Column_List" >
+        id, user_id, data_status, apply_type, apply_status, audit_status, enterprise_id, bank, bank_branch, loan_term, create_time, update_time, end_time, process_instance_id, process_key_type, financing_contract_name
+    </sql>
+
+    <select id="selectListByRowBounds" resultMap="BaseResultMap"  >
+       SELECT 
+       <include refid="Base_Column_List" />
+	   FROM apply_record
+    </select>
+
+    <select id="selectAllCount" resultType="java.lang.Long" >
+        SELECT 
+       COUNT(*)
+	   FROM apply_record
+    </select>
+
+</mapper>

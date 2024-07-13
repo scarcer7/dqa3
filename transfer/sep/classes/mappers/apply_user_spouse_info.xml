@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.razor.dqa.mapper.ApplyUserSpouseInfoMapper" >
+    
+    <select id="selectListByRowBounds" resultType="com.razor.dqa.model.ApplyUserSpouseInfo"  >
+       SELECT *
+	   FROM apply_user_spouse_info
+    </select>
+
+    <select id="selectAllCount" resultType="java.lang.Long" >
+        SELECT 
+       COUNT(*)
+	   FROM apply_user_spouse_info
+    </select>
+
+</mapper>

@@ -1,0 +1,36 @@
+2024-05-19 10:08:40 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.time.temporal.UnsupportedTemporalTypeException: Unsupported field: YearOfEra
+	at java.time.Instant.getLong(Instant.java:603)
+	at java.time.format.DateTimePrintContext.getValue(DateTimePrintContext.java:298)
+	at java.time.format.DateTimeFormatterBuilder$NumberPrinterParser.format(DateTimeFormatterBuilder.java:2551)
+	at java.time.format.DateTimeFormatterBuilder$CompositePrinterParser.format(DateTimeFormatterBuilder.java:2190)
+	at java.time.format.DateTimeFormatter.formatTo(DateTimeFormatter.java:1746)
+	at java.time.format.DateTimeFormatter.format(DateTimeFormatter.java:1720)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:49)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:53)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:203)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-19 10:13:09 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.time.temporal.UnsupportedTemporalTypeException: Unsupported field: YearOfEra
+	at java.time.Instant.getLong(Instant.java:603)
+	at java.time.format.DateTimePrintContext.getValue(DateTimePrintContext.java:298)
+	at java.time.format.DateTimeFormatterBuilder$NumberPrinterParser.format(DateTimeFormatterBuilder.java:2551)
+	at java.time.format.DateTimeFormatterBuilder$CompositePrinterParser.format(DateTimeFormatterBuilder.java:2190)
+	at java.time.format.DateTimeFormatter.formatTo(DateTimeFormatter.java:1746)
+	at java.time.format.DateTimeFormatter.format(DateTimeFormatter.java:1720)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:52)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:53)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:203)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
+2024-05-19 10:17:39 [main] ERROR c.r.d.v.fields.AfterValidator - 校验失败
+java.time.temporal.UnsupportedTemporalTypeException: Unsupported field: YearOfEra
+	at java.time.Instant.getLong(Instant.java:603)
+	at java.time.format.DateTimePrintContext.getValue(DateTimePrintContext.java:298)
+	at java.time.format.DateTimeFormatterBuilder$NumberPrinterParser.format(DateTimeFormatterBuilder.java:2551)
+	at java.time.format.DateTimeFormatterBuilder$CompositePrinterParser.format(DateTimeFormatterBuilder.java:2190)
+	at java.time.format.DateTimeFormatter.formatTo(DateTimeFormatter.java:1746)
+	at java.time.format.DateTimeFormatter.format(DateTimeFormatter.java:1720)
+	at com.razor.dqa.validator.fields.AfterValidator.validate(AfterValidator.java:52)
+	at com.razor.dqa.validator.AnnotationBasedValidator.validate(AnnotationBasedValidator.java:53)
+	at com.razor.dqa.service.impl.DataQualityAssessServiceImpl.assessData(DataQualityAssessServiceImpl.java:203)
+	at com.razor.dqa.DqaApplication.main(DqaApplication.java:21)
