@@ -43,7 +43,7 @@ public class TrafficCarRecord  implements Serializable, AssessTarget {
 
     @Metadata
     @NotNull
-    @RegexFormat("^JT\\d{19}")
+    @RegexFormat("^JT\\d{19}$")
     String parkingCode;
 
     @Metadata

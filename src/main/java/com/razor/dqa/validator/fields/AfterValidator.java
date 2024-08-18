@@ -12,9 +12,6 @@ import org.apache.commons.lang3.time.DateUtils;
 import com.razor.dqa.annotation.After;
 import com.razor.dqa.model.AssessTarget;
 import com.razor.dqa.validator.DqaResult;
-import com.razor.dqa.validator.helper.ConsistencyHelper;
-import com.razor.dqa.validator.helper.SpringContextHolder;
-
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
@@ -36,7 +33,7 @@ public class AfterValidator implements FieldValidator {
             if (!compareWith.isRef()) {
                 d1 = declaredField.get(target);
             } else {
-                d1 = SpringContextHolder.getBean(ConsistencyHelper.class).getApplyTime(ConsistencyHelper.APPLY_REOCRD_CREATE_TIME_PREFIX + declaredField.get(target));
+                // TODO 暂不支持
             }
             
             if (d1 == null) {

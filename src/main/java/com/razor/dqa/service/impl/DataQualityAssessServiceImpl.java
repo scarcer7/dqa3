@@ -79,8 +79,6 @@ public class DataQualityAssessServiceImpl implements DataQualityAssessService {
             List<ApplyRecord> rows = applyRecordMapper.selectListByRowBounds(new RowBounds(i, STEP));
             if (rows != null && !rows.isEmpty()) {
                 for (ApplyRecord row : rows) {
-                    consistencyHelper.put(ConsistencyHelper.APPLY_RECORD_ID, row.getId());
-                    consistencyHelper.putApplyTime(ConsistencyHelper.APPLY_REOCRD_CREATE_TIME_PREFIX + row.getId(), row.getCreateTime());
                     try {
                         validator.validate(row, result);
                     } catch (RuntimeException e) {

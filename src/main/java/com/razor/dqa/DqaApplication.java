@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import com.razor.dqa.service.DataQualityAssessService;
+import com.razor.dqa.service.SxjtDqaService;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -17,7 +18,9 @@ public class DqaApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(DqaApplication.class, args);
         log.info("============== start ==============");
-        DataQualityAssessService service = context.getBean(DataQualityAssessService.class);
+        // DataQualityAssessService service = context.getBean(DataQualityAssessService.class);
+        // service.assessData();
+        SxjtDqaService service = context.getBean(SxjtDqaService.class);
         service.assessData();
         log.info("============== end ==============");
     }
